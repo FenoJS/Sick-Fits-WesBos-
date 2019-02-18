@@ -1,2 +1,6 @@
-endpoint: https://eu1.prisma.sh/michalskijs-fda467/sickfits-learn/dev
+endpoint: ${env:PRISMA_ENDPOINT}
 datamodel: datamodel.prisma
+# secret: ${env:PRISMA_SECRET}
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma

@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": 0,
+    "no-empty": [
+      1,
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "no-unused-vars": 1,
+    "func-names": 0,
+    "arrow-body-style": [2, "as-needed"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prefer-stateless-function": 1,
+    "react/forbid-prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "max-len": [2, 140],
+    "react/no-unescaped-entities": 0,
+    "eol-last": 0,
+    "space-before-function-paren": ["error", "never"],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ]
+  },
+  "plugins": ["react"]
+}
